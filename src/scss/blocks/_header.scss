@@ -1,0 +1,139 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: var(--accent);
+  font-size: var(--h2-font-size);
+  transition: color .4s;
+}
+
+.nav__logo:hover {
+  color: black;
+}
+
+.nav__toggle,
+.nav__close {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.nav__link {
+  color: black;
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+}
+
+.nav__link:hover {
+  color: red;
+}
+
+.nav__toggle {
+  position: relative;
+  //display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 1.5rem;
+}
+
+.nav__toggle span,
+.nav__toggle span::before,
+.nav__toggle span::after {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+
+.nav__toggle span::before,
+.nav__toggle span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.nav__toggle span::before {
+  top: 0;
+}
+
+.nav__toggle span::after {
+  bottom: 0;
+}
+
+/* Add blur header */
+.blur-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(0, 0%, 6%, .2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  z-index: -1;
+}
+
+/* Active link */
+.active-link {
+  color: greenyellow;
+}
+
+
+/* Navigation for mobile devices */
+@media only screen and (max-width: 1150px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: hsla(0, 0%, 6%, .2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 80%;
+    height: 100%;
+    padding: 6rem 3rem 0;
+    transition: right .4s;
+    z-index: var(--z-fixed);
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.5rem;
+  }
+  .nav__link {
+    padding: 1.5rem 0;
+  }
+  .nav__toggle {
+    display: flex;
+  }
+  .nav__close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+  .show-menu {
+    right: 0;
+  }
+}
