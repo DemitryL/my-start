@@ -1,0 +1,30 @@
+/* ========= GOOGLE FONT ======== */
+
+
+/* Base */
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/stiky-footer";
+
+/* Blocks */
+@import "./blocks/*.scss";
+
+/* ======== SCROLLBAR ======== */
+::-webkit-scrollbar {
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(230, 16%, 85%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: hsl(230, 16%, 65%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(230, 16%, 55%);
+}

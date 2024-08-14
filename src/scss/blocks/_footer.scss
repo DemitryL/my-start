@@ -1,0 +1,11 @@
+.footer {
+  background-color: rgb(99, 57, 225);
+  padding: 10px 0;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+
+  @include tablet {
+    font-size: 25px;
+  }
+}

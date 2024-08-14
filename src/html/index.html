@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- MAIN CSS -->
+    @@if(name === 'dev'){
+    <link href="css/main.css" rel="stylesheet" />
+    } @@if(name === 'docs'){
+    <link href="css/main.min.css" rel="stylesheet" />
+    }
+
+    <title>Main page</title>
+  </head>
+  <body>
+    <!--- HEADER -->
+    @@include('./blocks/header.html')
+    <!-- MAIN -->
+    <main class="main"></main>
+    <!-- FOOTER -->
+    @@include('./blocks/footer.html')
+
+    <!-- MAIN JS -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
