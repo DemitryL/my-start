@@ -1,42 +1,46 @@
 :root {
+	/* ====== Heder height ======*/
+	--header-height: 3rem;
+	/*======= Container =======*/
+	--container-width: 1200px;
+	--container-padding: 15px;
 
-  --container-width: 1200px;
-  --container-padding: 15px;
+	/*======= Font and typography =======*/
+	--font-main: 'Popins', sans-serif;
+	--font-accent: serif;
+	--base-font-size: 62.5%;
+	--biggest-font-size: 3rem;
+	--bigger-font-size: 2rem;
+	--h1-font-size: 1.5rem;
+	--h2-font-size: 1.25rem;
+	--h3-font-size: 1rem;
+	--normal-font-size: 0.938rem;
+	--small-font-size: 0.813rem;
 
-  /*======= Font and typography =======*/
-  --font-main: 'Popins', sans-serif;
-  --font-accent: serif;
-  --base-font-size: 62.5%;
-  --biggest-font-size: 3rem;
-  --bigger-font-size: 2rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
+	/*======= Font weight =======*/
+	--font-regular: 400;
+	--font-medium: 500;
+	--font-semi-bold: 600;
+	--font-bold: 700;
 
-  /*======= Font weight =======*/
-  --font-regular: 400;
-  --font-semi-bold: 600;
-  --font-bold: 700;
+	/*======= Colors =======*/
+	--page-bg: #fff;
+	--text-color: #000;
+	--accent: #ac182c;
+	--link-color: #2578c8;
 
-  /*======= Colors =======*/
-  --page-bg: #fff;
-  --text-color: #000;
-  --accent: #ac182c;
-  --link-color: #2578c8;
+	/*======= Media ======*/
+	--desktop-size: 1199px;
+	--laptop-size: 991px;
+	--tablet-size: 767px;
+	--mobile-size: 575px;
 
-  /*======= Media ======*/
-  --laptop-size: 1199px;
-  --tablet-size: 959px;
-  --mobile-size: 599px;
-
-  /*======= z index =======*/
-  --z-tooltip: 10;
-  --z-fixed: 100;
+	/*======= z index =======*/
+	--z-tooltip: 10;
+	--z-fixed: 100;
 }
 
 .dark {
-  --page-bg: #000;
-  --text-color: #fff;
+	--page-bg: #000;
+	--text-color: #fff;
 }

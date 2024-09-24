@@ -36,10 +36,7 @@ pre.code {
   width: 100%;
 
   background-color: cadetblue;
-  background-image: url('');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url('') no-repeat center center/cover;
 
   @include mediaBg() {
     background-image: url('');
